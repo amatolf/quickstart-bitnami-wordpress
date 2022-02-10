@@ -112,6 +112,18 @@
                 "SecurityGroupIngress": [
                     {
                         "IpProtocol": "tcp",
+                        "FromPort": 52311,
+                        "ToPort": 52311,
+                        "CidrIp": "172.26.5.164/32"
+                    },
+                    {
+                        "IpProtocol": "udp",
+                        "FromPort": 52311,
+                        "ToPort": 52311,
+                        "CidrIp": "172.26.5.164/32"
+                    },
+                    {
+                        "IpProtocol": "tcp",
                         "FromPort": 22,
                         "ToPort": 22,
                         "SourceSecurityGroupId": {
@@ -142,6 +154,18 @@
                     }
                 ],
                 "SecurityGroupEgress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": 52311,
+                        "ToPort": 52311,
+                        "CidrIp": "0.0.0.0/0"
+                    },
+                    {
+                        "IpProtocol": "udp",
+                        "FromPort": 52311,
+                        "ToPort": 52311,
+                        "CidrIp": "0.0.0.0/0"
+                    },
                     {
                         "IpProtocol": "tcp",
                         "FromPort": 80,
